@@ -10,7 +10,7 @@ run: all
 	./ubt
 
 ubt: ubt.o main.o
-	$(CC) $(CFLAGS) $(build)/ubt.o $(build)/main.o -o ubt -lm 
+	$(CC) $(CFLAGS) $(build)/ubt.o $(build)/main.o -o $(build)/ubt -lm 
 
 ubt.o:
 	$(CC) $(CFLAGS) -c $(src)/ubt.c -o $(build)/ubt.o 
@@ -21,4 +21,3 @@ main.o:
 .PHONY : clean
 clean:
 	rm $(build)/*
-	rm ubt
