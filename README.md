@@ -11,7 +11,7 @@ time ./build/ubt seed2.txt
 time ./build/ubt worst-case-muts/worst_case22.txt
 
 # to fuzz, first initialize as perun repo
-perun init --vsc-type=git --configure
+perun init --vcs-type=git --configure
 
 # create output directory for fuzzing
 mkdir output
