@@ -1,11 +1,3 @@
-//
-//  BST.c
-//  BST
-//
-//  Created by Will Salisbury on 5/21/14.
-//  Copyright (c) 2014 Will Salisbury. All rights reserved.
-//
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
