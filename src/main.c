@@ -1,10 +1,3 @@
-//
-//  main.c
-//  BST
-//
-//  Created by Will Salisbury on 5/21/14.
-//  Copyright (c) 2014 Will Salisbury. All rights reserved.
-//
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -12,7 +5,7 @@
 
 #include "ubt.h"
 
-static const u_int32_t maxVal = 100;
+
 
 int main(int argc, char **argv)
 {
