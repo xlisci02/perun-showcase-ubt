@@ -1,21 +1,29 @@
-# perun-showcase-ubt
+# Perun fuzz demonstration on UBT
 
-```
-# clone
-git clone https://github.com/xlisci02/perun-showcase-ubt
-cd perun-showcase-ubt
+This is an example program that creates UBT, iteratively inserts elements to it and prints the final UBT.  The project was created to demonstrate the functionality of [Perun](https://github.com/xlisci02/perun) fuzzing machine. 
 
-# build and run
-make
-time ./build/ubt seed2.txt
-time ./build/ubt worst-case-muts/worst_case22.txt
 
-# to fuzz, first initialize as perun repo
-perun init --vcs-type=git --configure
+## Clone the repository
+First step is to clone this repository with following command:
 
-# create output directory for fuzzing
-mkdir output
+    git clone https://github.com/xlisci02/perun-showcase-ubt
+	cd perun-showcase-ubt
 
-# fuzz example
-perun fuzz -b ./build/ubt -w seed2.txt -o output -t 900 -mp 1 -cr 8
-```
+## Build and run for example with seed and mutation file
+Notice the time difference between the runtime with initial seed and its mutation.
+
+	make
+	time ./build/ubt seed2.txt
+	time ./build/ubt worst-case-muts/worst_case22.txt
+
+## Want to fuzz ? First initialize
+
+Run the following and close the configuration file that pops up:
+
+	perun init --vcs-type=git --configure
+
+## Create output directory and start fuzz
+The command for launching the fuzzing machine can look similar to this:
+
+	mkdir output
+	perun fuzz -b ./build/ubt -w seed2.txt -o output -t 900 -mp 1 -cr 8
