@@ -1,11 +1,3 @@
-//
-//  BST.h
-//  BST
-//
-//  Created by Will Salisbury on 5/21/14.
-//  Copyright (c) 2014 Will Salisbury. All rights reserved.
-//
-
 #ifndef BST_BST_h
 #define BST_BST_h
 
