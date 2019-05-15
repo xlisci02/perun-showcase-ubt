@@ -36,5 +36,5 @@ In case your identity is not defined, set your user name and email address like 
 The command for launching the fuzzing machine can look similar to this:
 
 	mkdir output
-	perun fuzz -b ./build/ubt -w seed2.txt -o output -t 900 -mp 1 -cr 8
+	perun fuzz -b ./build/ubt -w seed2.txt -o output -t 900 -mp 1 -cr 8 -s src/ -g build/
 
