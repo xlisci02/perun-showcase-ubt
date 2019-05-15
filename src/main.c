@@ -9,7 +9,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <assert.h>
-#include <sys/random.h>
 
 #include "ubt.h"
 
