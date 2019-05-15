@@ -7,8 +7,8 @@ cd perun-showcase-ubt
 
 # build and run
 make
-time ./list seed2.txt
-time ./list worst-case-muts/worst_case22.txt
+time ./build/ubt seed2.txt
+time ./build/ubt worst-case-muts/worst_case22.txt
 
 # to fuzz, first initialize as perun repo
 perun init --vsc-type=git --configure
